@@ -8,6 +8,7 @@ public class BlackcofferApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BlackcofferApplication.class, args);
+		System.out.println("App is running...");
 	}
 
 }
