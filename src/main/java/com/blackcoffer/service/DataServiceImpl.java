@@ -19,6 +19,7 @@ public class DataServiceImpl {
     }
 
     public List<Object[]> findSumOfIntensity() {
-        return dataRepository.findSumOfIntensity();
+//        return dataRepository.findSumOfIntensity();
+        return dataRepository.findLikelihoodAvg();
     }
 }

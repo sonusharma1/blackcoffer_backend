@@ -13,4 +13,11 @@ public interface DataRepository extends JpaRepository<Data, Integer> {
             "WHERE t.country IS NOT NULL AND t.country <> ''" +
             "GROUP BY t.country")
     List<Object[]> findSumOfIntensity();
+
+    @Query("SELECT d.sector, AVG(d.likelihood) AS avgLikelihood\n" +
+            "FROM Data d\n" +
+            "GROUP BY d.sector\n")
+    List<Object[]> findLikelihoodAvg();
+
+
 }
