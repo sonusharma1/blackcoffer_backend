@@ -10,5 +10,4 @@ public class BlackcofferApplication {
 		SpringApplication.run(BlackcofferApplication.class, args);
 		System.out.println("App is running...");
 	}
-
 }
